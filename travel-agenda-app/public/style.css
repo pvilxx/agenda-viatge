@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+header { background: #2c3e50; color: #fff; padding: 1em 2em; }
+main { max-width: 900px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+h1 { margin: 0; }
+h2 { margin-top: 0; }
+table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+th, td { border: 1px solid #ddd; padding: 0.5em; text-align: left; }
+th { background: #f0f0f0; }
+tr:nth-child(even) { background: #f9f9f9; }
+form { margin-top: 2em; display: flex; flex-wrap: wrap; gap: 1em; }
+form input, form button { padding: 0.5em; font-size: 1em; }
+form input { flex: 1 1 150px; }
+form button { flex: 1 1 100px; background: #2c3e50; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+form button#cancelEdit { background: #888; }
+@media (max-width: 700px) { main { padding: 1em; } table, thead, tbody, th, td, tr { display: block; } th, td { border: none; } th { background: none; } }

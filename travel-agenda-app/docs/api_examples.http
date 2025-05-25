@@ -1,0 +1,35 @@
+### Exemple: GET tots els clients
+GET http://localhost:3000/api/clients
+
+### Exemple: GET client per ID
+GET http://localhost:3000/api/clients/1
+
+### Exemple: GET clients per destinació
+GET http://localhost:3000/api/clients?destination=Paris
+
+### Exemple: POST nou client
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+  "nom": "Maria",
+  "cognoms": "López",
+  "telefon": "600987654",
+  "email": "maria@exemple.com",
+  "destinacio": "Londres"
+}
+
+### Exemple: PUT editar client
+PUT http://localhost:3000/api/clients/1
+Content-Type: application/json
+
+{
+  "nom": "Anna",
+  "cognoms": "Serra",
+  "telefon": "600123456",
+  "email": "anna@exemple.com",
+  "destinacio": "Berlin"
+}
+
+### Exemple: DELETE client
+DELETE http://localhost:3000/api/clients/1

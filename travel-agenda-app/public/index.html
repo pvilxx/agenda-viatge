@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Viatge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda de Viatge - Blai Vilar</h1>
+    </header>
+    <main>
+        <section id="client-management">
+            <h2>Gestió de Clients</h2>
+            <input type="text" id="search" placeholder="Cerca per destinació...">
+            <button id="searchBtn">Cercar</button>
+            <table id="clients-table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Cognoms</th>
+                        <th>Telèfon</th>
+                        <th>Email</th>
+                        <th>Destinació</th>
+                        <th>Data Creació</th>
+                        <th>Accions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <h3 id="form-title">Afegir Client</h3>
+            <form id="client-form">
+                <input type="hidden" id="client-id">
+                <input type="text" id="nom" placeholder="Nom" required>
+                <input type="text" id="cognoms" placeholder="Cognoms" required>
+                <input type="text" id="telefon" placeholder="Telèfon" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="destinacio" placeholder="Destinació" required>
+                <button type="submit">Desar</button>
+                <button type="button" id="cancelEdit" style="display:none;">Cancel·lar</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
