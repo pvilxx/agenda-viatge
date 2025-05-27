@@ -1,0 +1,30 @@
+# Workflow per executar tests automàtics en cada push o pull request a main
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout del codi
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Instal·lació de Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Instal·lació de dependències
+      - name: Instal·lar dependències
+        run: npm install
+
+      # Execució de tests
+      - name: Executar tests
+        run: npm test
