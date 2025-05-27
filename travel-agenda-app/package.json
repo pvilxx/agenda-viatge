@@ -5,7 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "jest",
+    "build": "echo 'No build step defined'",
+    "lint": "eslint ."
   },
   "dependencies": {
     "cors": "^2.8.5",

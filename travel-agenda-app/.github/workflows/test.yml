@@ -25,6 +25,14 @@ jobs:
       - name: Instal·lar dependències
         run: npm install
 
+      # Build del projecte
+      - name: Build del projecte
+        run: npm run build
+
+      # Anàlisi amb ESLint
+      - name: Anàlisi amb ESLint
+        run: npm run lint
+
       # Execució de tests
       - name: Executar tests
         run: npm test
